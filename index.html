@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Gallery</title>
+    <!-- Link archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Letras Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<!-- Link iconos Fontawesome -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<!-- Notice how the data-search-pseudo-elements has no explicit value. This sets it to "true". -->
+    <script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-search-pseudo-elements ></script>
+    <!-- Link Bootstraps -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+
+<!-------------------------------------------//
+// ---------------- BODY --------------------//
+// ------------------------------------------->
+
+<body>
+
+<!-------------------------------------------//
+// ---------------- HEADER ------------------//
+// ------------------------------------------->	
+
+<header>
+    <h1><span>Images Gallery</span></h1>
+    <hr>
+    <br>
+    <div class="logo">
+        <p>B R A N D</p>
+    </div>
+</header> 
+
+<!-------------------------------------------//
+// ---------------- GALERY ------------------//
+// ------------------------------------------->	
+
+    <div class="ful-img" id="fulImgBox">
+        <img src="imgs/1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+        <div class="img-gallery" id="img-gallery">
+
+            <div class="item" data-categoria="Ciudades" data-etiquetas="ciudades" data-descripcion="1.- Imagen 1.">
+				<div class="item-contenido">
+					<img src="imgs/1.jpg" onclick="openFulImg(this.src)" alt="">
+                    <!-- <p class="descripcion">1.- Imagen 1.</p>-->	
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="autos" data-descripcion="2.-Imagen 2.">
+				<div class="item-contenido">
+					<img src="imgs/2.jpg" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+            
+            <div class="item" data-categoria="Objetos" data-etiquetas="carros" data-descripcion="3.- .">
+				<div class="item-contenido">
+					<img src="imgs/3.jpg" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="calles" data-descripcion="4.- .">
+				<div class="item-contenido">
+					<img src="imgs/4.jpg" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="ciudades" data-descripcion="5.- .">
+				<div class="item-contenido">
+					<img src="imgs/5.jpg" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="ciudades autos" data-descripcion="6.- .">
+				<div class="item-contenido">
+					<img src="imgs/6.jpg" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="carros calles" data-descripcion="7.- .">
+				<div class="item-contenido">
+					<img src="imgs/7.jpg" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="calles" data-descripcion="8.- .">
+				<div class="item-contenido">
+					<img src="imgs/8.jpg" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="ciudades" data-descripcion="9.- .">
+				<div class="item-contenido">
+					<img src="imgs/9.png" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="ciudades autos carros calles" data-descripcion="10.- .">
+				<div class="item-contenido">
+					<img src="imgs/10.png" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="ciudades autos carros calles" data-descripcion="11.- .">
+				<div class="item-contenido">
+					<img src="imgs/11.png" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+            <div class="item" data-categoria="Objetos" data-etiquetas="ciudades autos carros calles" data-descripcion="12.- .">
+				<div class="item-contenido">
+					<img src="imgs/12.png" onclick="openFulImg(this.src)" alt="">
+				</div>
+			</div>
+
+        </div>
+        
+<!-------------------------------------------//
+// ----------------FOOTER--------------------//
+// ------------------------------------------->
+
+<footer class="contenedor">
+    <!--- Redes Sociales --->
+        <div class="redes-sociales">
+            <div class="contenedor-icono">
+                <a href="#" target="_blank" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="#" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="#" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+    <!--- Letras Footer --->
+        <div class="creado-por">
+            <p>Sitio diseñado por <a href="#">Overflow X</a> by<a href="#"> 'Lucrecia Roa'</a></p>
+            <div class="col-lg-12 col-md-12 col-sm-12 card-footer">
+                <br> <hr> <br>
+                <p class="lead align-items-center text-center" style="color: rgb(74, 71, 71); font-size: small;">© Copyright 2023 - Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+    <!--Botón Arriba-->
+    <div class="go-top-container redondo">
+        <div>
+          <button class="go-top-button"><i class="fas fa-chevron-up"></i></button>
+        </div>
+    </div>
+
+</footer>
+<!-- Fin FOOTER -->
+
+<!--Scripts varios-->
+<script src="./js/botonArriba.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=3vn6JubwmCs -->
