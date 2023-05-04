@@ -427,4 +427,10 @@ footer .creado-por a:hover {
     h1 span{
         padding: 0;
     }
+	img{
+		max-height: 350px;
+		max-width: 300px;
+		object-fit: cover;
+		object-position: top;
+	}
 }
