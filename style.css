@@ -33,6 +33,7 @@ h1 span{
     padding: 0 15px;
 	color: #69a1c5;
 	border-radius: 5px;
+	background-color: black;
 }
 
 /* linea subrayada */
@@ -53,9 +54,10 @@ header .logo {
 	margin-bottom: 40px;
 }
 
-header .logo p {
+header .logo h3 {
 	color: #fa0101;
 	font-weight: bold;
+	font-size: 22px;
 }
 
 header form {
@@ -335,7 +337,7 @@ footer .creado-por {
 
 footer .creado-por a {
 	color: red;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 footer .creado-por a:hover {
@@ -377,7 +379,7 @@ footer .creado-por a:hover {
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgb(4, 4, 4);
+	color:  #69a1c5;
 	transition: 0.2s;
   }
   
