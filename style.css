@@ -427,6 +427,9 @@ footer .creado-por a:hover {
     h1 span{
         padding: 0;
     }
+}
+
+@media screen and (min-width:400px){
 	img{
 		max-height: 350px;
 		max-width: 300px;
